@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order – Uncle Nomad Homestay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="guest-app">
+    <div class="brand">
+      <div class="brand-logo">Uncle Nomad</div>
+      <div class="brand-tagline">Food served with love...</div>
+      <div class="brand-contact">Order to your room</div>
+    </div>
+    <header class="header">
+      <h1>Room order</h1>
+      <p>Choose from the menu below</p>
+    </header>
+
+    <section id="step-no-room" class="step active">
+      <div class="empty-state no-room-msg">
+        <p class="section-title">Use the QR code in your room</p>
+        <p>Each room has its own QR code. Scan the code in your room to open the menu and order. Your bill will be added to your room automatically.</p>
+      </div>
+    </section>
+
+    <section id="step-menu" class="step">
+      <div class="menu-room-row" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <span id="selected-room-label" style="font-weight: 600; color: var(--text-heading);"></span>
+        <button type="button" id="btn-change-room" class="btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; display: none;">Change room</button>
+      </div>
+      <div class="category-tabs" id="category-tabs"></div>
+      <div class="menu-list" id="menu-list"></div>
+      <a href="/menu-full" target="_blank" class="menu-link">View full menu (PDF style) →</a>
+    </section>
+
+    <section id="step-cart" class="step">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <span id="cart-room-label" style="font-weight: 600; color: var(--accent);"></span>
+        <button type="button" id="btn-back-to-menu" class="btn-secondary" style="padding: 0.4rem 0.8rem;">Back to menu</button>
+      </div>
+      <div class="confirm-section">
+        <h3 class="section-title">Your order</h3>
+        <ul id="cart-list" class="confirm-list"></ul>
+        <label class="section-title" style="text-transform: none; letter-spacing: 0;">Special requests (optional)</label>
+        <textarea id="order-note" class="note-input" placeholder="e.g. No onion, extra spicy..."></textarea>
+        <button type="button" id="btn-place-order" class="btn-block btn-primary">Place order</button>
+      </div>
+    </section>
+
+    <section id="step-done" class="step">
+      <div class="success-msg">
+        <div class="icon">✓</div>
+        <h2>Order placed!</h2>
+        <p>Your order has been sent to the kitchen. We'll bring it to your room shortly.</p>
+        <button type="button" id="btn-new-order" class="btn-block btn-primary">Place another order</button>
+      </div>
+    </section>
+
+    <div id="cart-bar" class="cart-bar" style="display: none;">
+      <div>
+        <div class="total" id="cart-total">₹ 0</div>
+        <div class="count" id="cart-count">0 items</div>
+      </div>
+      <button type="button" id="btn-view-cart">View cart</button>
+    </div>
+  </div>
+  <script src="/js/guest.js"></script>
+</body>
+</html>

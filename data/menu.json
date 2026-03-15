@@ -1,0 +1,174 @@
+[
+  {
+    "id": "tea-coffee",
+    "name": "Tea - Coffee",
+    "items": [
+      { "id": "tc1", "name": "Kaali Chai", "price": 30 },
+      { "id": "tc2", "name": "Dudh Wali Chai", "price": 40 },
+      { "id": "tc3", "name": "Masala Chai", "price": 50 },
+      { "id": "tc4", "name": "Ginger Lemon Honey Tea", "price": 100 },
+      { "id": "tc5", "name": "Hot Chocolate", "price": 120 },
+      { "id": "tc6", "name": "Black Coffee", "price": 50 },
+      { "id": "tc7", "name": "Hot Coffee", "price": 70 },
+      { "id": "tc8", "name": "Cold Coffee", "price": 100 }
+    ]
+  },
+  {
+    "id": "breakfast",
+    "name": "Breakfast",
+    "items": [
+      { "id": "bf1", "name": "Aloo Paratha", "price": 80 },
+      { "id": "bf2", "name": "Aloo-Pyaz/Gobi/Onion Paratha", "price": 90 },
+      { "id": "bf3", "name": "Paneer Paratha", "price": 120 },
+      { "id": "bf4", "name": "Mix Paratha", "price": 120 },
+      { "id": "bf5", "name": "Curd", "price": 30 },
+      { "id": "bf6", "name": "Butter", "price": 10 },
+      { "id": "bf7", "name": "Poha", "price": 120 },
+      { "id": "bf8", "name": "Upma", "price": 120 },
+      { "id": "bf9", "name": "Besan Chila", "price": 120 }
+    ]
+  },
+  {
+    "id": "eggs",
+    "name": "Eggs",
+    "items": [
+      { "id": "eg1", "name": "Boiled Egg (2 Piece)", "price": 70 },
+      { "id": "eg2", "name": "Plain Omelette", "price": 60 },
+      { "id": "eg3", "name": "Masala Omelette", "price": 80 },
+      { "id": "eg4", "name": "Bread Omelette", "price": 100 },
+      { "id": "eg5", "name": "Cheese Bread Omelette", "price": 120 },
+      { "id": "eg6", "name": "Egg Paratha", "price": 120 }
+    ]
+  },
+  {
+    "id": "breads",
+    "name": "Breads",
+    "items": [
+      { "id": "br1", "name": "Butter Toast", "price": 60 },
+      { "id": "br2", "name": "Nutella Toast", "price": 120 },
+      { "id": "br3", "name": "Cheese Toast", "price": 120 },
+      { "id": "br4", "name": "Veg Sandwich", "price": 120 },
+      { "id": "br5", "name": "Cheese Sandwich", "price": 150 },
+      { "id": "br6", "name": "Cheese Corn Sandwich", "price": 150 }
+    ]
+  },
+  {
+    "id": "pancakes",
+    "name": "Pancakes",
+    "items": [
+      { "id": "pc1", "name": "Nutella Delight Pancake", "price": 220 },
+      { "id": "pc2", "name": "Banana Nutella Pancake", "price": 240 },
+      { "id": "pc3", "name": "Honey Banana Pancake", "price": 200 }
+    ]
+  },
+  {
+    "id": "maggie",
+    "name": "Maggie",
+    "items": [
+      { "id": "mg1", "name": "Classic Maggie", "price": 50 },
+      { "id": "mg2", "name": "Spicy Masala Maggie", "price": 70 },
+      { "id": "mg3", "name": "Veggie Delight Maggie", "price": 90 },
+      { "id": "mg4", "name": "Cheesy Maggie", "price": 120 },
+      { "id": "mg5", "name": "Veg Special Maggie", "price": 120 }
+    ]
+  },
+  {
+    "id": "rice-bowls",
+    "name": "Rice Bowls",
+    "items": [
+      { "id": "rb1", "name": "Daal Rice Bowl", "price": 180 },
+      { "id": "rb2", "name": "Rajma Rice Bowl", "price": 200 },
+      { "id": "rb3", "name": "Curd Rice Bowl", "price": 180 },
+      { "id": "rb4", "name": "Paneer Makhni Bowl", "price": 250 }
+    ]
+  },
+  {
+    "id": "rice-mixtures",
+    "name": "Rice Mixtures",
+    "items": [
+      { "id": "rm1", "name": "Plain Rice", "price": 140 },
+      { "id": "rm2", "name": "Jeera Rice", "price": 160 },
+      { "id": "rm3", "name": "Veg Pulao", "price": 200 },
+      { "id": "rm4", "name": "Veg Biryani", "price": 250 },
+      { "id": "rm5", "name": "Chicken Biryani", "price": 350 },
+      { "id": "rm6", "name": "Veg Fried Rice", "price": 200 },
+      { "id": "rm7", "name": "Chicken Fried Rice", "price": 280 },
+      { "id": "rm8", "name": "Egg Fried Rice", "price": 250 }
+    ]
+  },
+  {
+    "id": "main-course",
+    "name": "Main Course",
+    "items": [
+      { "id": "mc1", "name": "Dal Tadka", "price": 220 },
+      { "id": "mc2", "name": "Dal Makhni", "price": 280 },
+      { "id": "mc3", "name": "Rajma", "price": 230 },
+      { "id": "mc4", "name": "Mix Veg", "price": 220 },
+      { "id": "mc5", "name": "Dum Aloo", "price": 320 },
+      { "id": "mc6", "name": "Jeera Aloo", "price": 160 },
+      { "id": "mc7", "name": "Aalu Gobhi Masala", "price": 180 },
+      { "id": "mc8", "name": "Aloo Matar Masala", "price": 170 },
+      { "id": "mc9", "name": "Lauki Kofta", "price": 240 },
+      { "id": "mc10", "name": "Masala Mushroom", "price": 260 },
+      { "id": "mc11", "name": "Matar Mushroom", "price": 280 }
+    ]
+  },
+  {
+    "id": "paneer-delights",
+    "name": "Paneer Delights",
+    "items": [
+      { "id": "pd1", "name": "Matar Paneer", "price": 280 },
+      { "id": "pd2", "name": "Paneer Butter Masala", "price": 350 },
+      { "id": "pd3", "name": "Kadhai Paneer", "price": 300 },
+      { "id": "pd4", "name": "Shahi Paneer", "price": 350 },
+      { "id": "pd5", "name": "Paneer Bhurji", "price": 320 }
+    ]
+  },
+  {
+    "id": "chicken",
+    "name": "Chicken",
+    "items": [
+      { "id": "ck1", "name": "Egg Curry", "price": 280 },
+      { "id": "ck2", "name": "Pahadi Chicken", "price": 350 },
+      { "id": "ck3", "name": "Butter Chicken", "price": 380 },
+      { "id": "ck4", "name": "Kadhai Chicken", "price": 380 }
+    ]
+  },
+  {
+    "id": "rotis",
+    "name": "Rotis",
+    "items": [
+      { "id": "rt1", "name": "Plain Roti", "price": 20 },
+      { "id": "rt2", "name": "Butter Roti", "price": 30 },
+      { "id": "rt3", "name": "Plain Paratha", "price": 40 }
+    ]
+  },
+  {
+    "id": "snacks-veg",
+    "name": "Snacks (Veg)",
+    "items": [
+      { "id": "sv1", "name": "Masala Papad", "price": 80 },
+      { "id": "sv2", "name": "Peanut Masala", "price": 120 },
+      { "id": "sv3", "name": "Cheese Balls", "price": 220 },
+      { "id": "sv4", "name": "French Fries", "price": 150 },
+      { "id": "sv5", "name": "Peri Peri Fries", "price": 180 },
+      { "id": "sv6", "name": "Cheese Fries", "price": 220 },
+      { "id": "sv7", "name": "Mix Pakora", "price": 180 },
+      { "id": "sv8", "name": "Cheese Nachos", "price": 220 },
+      { "id": "sv9", "name": "Crispy Corn", "price": 250 },
+      { "id": "sv10", "name": "Chilli Potato", "price": 200 },
+      { "id": "sv11", "name": "Honey Chilli Potato", "price": 220 },
+      { "id": "sv12", "name": "Chilli Paneer", "price": 250 }
+    ]
+  },
+  {
+    "id": "snacks-nonveg",
+    "name": "Snacks (Non-Veg)",
+    "items": [
+      { "id": "sn1", "name": "Chilli Chicken", "price": 300 },
+      { "id": "sn2", "name": "Chicken 65", "price": 320 },
+      { "id": "sn3", "name": "Chicken Nuggets", "price": 280 },
+      { "id": "sn4", "name": "Lemon Chicken", "price": 320 }
+    ]
+  }
+]

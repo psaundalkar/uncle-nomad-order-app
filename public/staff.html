@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff – Uncle Nomad Homestay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="staff-app">
+    <div class="brand">
+      <div class="brand-logo">Uncle Nomad</div>
+      <div class="brand-tagline">Food served with love...</div>
+      <div class="brand-contact">Staff dashboard</div>
+    </div>
+    <header class="header">
+      <h1>Staff</h1>
+      <span class="live-badge">Live</span>
+    </header>
+
+    <div class="tabs">
+      <button type="button" class="tab active" data-tab="orders">Orders</button>
+      <button type="button" class="tab" data-tab="bills">Room bills</button>
+    </div>
+
+    <div id="panel-orders" class="panel">
+      <p class="refresh-note">Orders auto-refresh. Mark status: Preparing → Ready → Delivered. Delivered orders move to Completed orders.</p>
+      <section class="orders-section">
+        <h2 class="orders-section-title">Pending orders</h2>
+        <div id="orders-live-list"></div>
+        <div id="orders-live-empty" class="empty-state" style="display: none;">No pending orders.</div>
+      </section>
+      <section class="orders-section">
+        <h2 class="orders-section-title">Completed orders</h2>
+        <div id="orders-past-list"></div>
+        <div id="orders-past-empty" class="empty-state" style="display: none;">No completed orders.</div>
+      </section>
+    </div>
+
+    <div id="panel-bills" class="panel" style="display: none;">
+      <p class="refresh-note">Pending = not yet delivered. Cleared = amount paid. Use “Clear bill” when the guest has paid.</p>
+      <div id="bills-list" class="bills-grid"></div>
+    </div>
+  </div>
+  <script src="/js/staff.js"></script>
+</body>
+</html>

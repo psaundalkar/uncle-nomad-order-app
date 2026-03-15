@@ -1,0 +1,14 @@
+[
+  { "id": "101", "name": "Room 101" },
+  { "id": "102", "name": "Room 102" },
+  { "id": "103", "name": "Room 103" },
+  { "id": "201", "name": "Room 201" },
+  { "id": "202", "name": "Room 202" },
+  { "id": "203", "name": "Room 203" },
+  { "id": "301", "name": "Room 301" },
+  { "id": "302", "name": "Room 302" },
+  { "id": "304", "name": "Room 304" },
+  { "id": "401", "name": "Room 401" },
+  { "id": "402", "name": "Room 402" },
+  { "id": "403", "name": "Room 403" }
+]

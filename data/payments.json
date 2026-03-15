@@ -1,0 +1,14 @@
+[
+  {
+    "roomId": "401",
+    "roomName": "Room 401",
+    "amount": 1100,
+    "clearedAt": "2026-03-15T08:04:08.052Z"
+  },
+  {
+    "roomId": "103",
+    "roomName": "Room 103",
+    "amount": 220,
+    "clearedAt": "2026-03-15T08:08:35.385Z"
+  }
+]
