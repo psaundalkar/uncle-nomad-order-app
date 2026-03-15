@@ -5,7 +5,14 @@ const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const DATA_DIR = path.join(__dirname, 'data');
+// On Vercel, only /tmp is writable; use it for orders/payments. Menu & rooms stay in repo.
+const IS_VERCEL = !!process.env.VERCEL;
+const STATIC_DATA_DIR = path.join(__dirname, 'data');
+const DATA_DIR = IS_VERCEL ? '/tmp/orderapp-data' : path.join(__dirname, 'data');
+
+function ensureDataDir() {
+  if (IS_VERCEL && !fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+}
 
 app.use(cors());
 app.use(express.json());
@@ -21,7 +28,8 @@ app.get('/order/:roomId', (req, res) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 function readJson(file) {
-  const p = path.join(DATA_DIR, file);
+  const dir = (file === 'menu.json' || file === 'rooms.json') ? STATIC_DATA_DIR : DATA_DIR;
+  const p = path.join(dir, file);
   try {
     return JSON.parse(fs.readFileSync(p, 'utf8'));
   } catch (e) {
@@ -31,6 +39,7 @@ function readJson(file) {
 }
 
 function writeJson(file, data) {
+  ensureDataDir();
   fs.writeFileSync(path.join(DATA_DIR, file), JSON.stringify(data, null, 2));
 }
 
@@ -151,8 +160,13 @@ app.get('/', (req, res) => {
   res.redirect('/order');
 });
 
-app.listen(PORT, () => {
-  console.log('Uncle Nomad Order App running at http://localhost:' + PORT);
-  console.log('  Room links (for QR): /order/101, /order/102, ... /order/403 (see data/rooms.json)');
-  console.log('  Staff: http://localhost:' + PORT + '/staff');
-});
+// Export for Vercel serverless; listen when run directly (e.g. node server.js)
+if (process.env.VERCEL) {
+  module.exports = app;
+} else {
+  app.listen(PORT, () => {
+    console.log('Uncle Nomad Order App running at http://localhost:' + PORT);
+    console.log('  Room links (for QR): /order/101, /order/102, ... /order/403 (see data/rooms.json)');
+    console.log('  Staff: http://localhost:' + PORT + '/staff');
+  });
+}
